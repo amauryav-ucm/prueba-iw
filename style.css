@@ -1,0 +1,37 @@
+.note-text{
+    display: inline-block;
+    width: 20px;
+    text-align: end;
+}
+
+.note {
+  appearance: none;
+  width: 48px;
+  height: 20px;
+  background-color: #ccc;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  margin-inline:2px;
+  margin-block: 0;
+}
+
+.section-end{
+    margin-inline-end: 8px;
+}
+
+.note:checked {
+  background-color: #800080;
+  border-color: #800080;
+}
+
+.note-roll {
+    margin-block: 0;
+    padding-block: 0;
+}
+
+.h-scroll {
+  overflow-x: auto;      /* enable horizontal scrolling */
+  overflow-y: hidden;
+  white-space: nowrap;
+  margin-top: 2em;
+}
