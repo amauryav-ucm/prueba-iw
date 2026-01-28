@@ -3,7 +3,7 @@ const pianoRoll = document.getElementById("pianoRoll");
 let bpm = 140;
 let inst = 1;
 
-["C", "^C", "D", "^D", "E", "F", "^F", "G", "^G", "A", "^B", "B"].forEach(
+["C", "^C", "D", "^D", "E", "F", "^F", "G", "^G", "A", "^A", "B"].forEach(
   (n) => {
     roll = document.createElement("div");
     roll.setAttribute("id", `roll${n}`);
@@ -17,6 +17,7 @@ let inst = 1;
       cb.setAttribute("id", `${n}${i}`);
       cb.setAttribute("type", "checkbox");
       cb.classList.add("note");
+      if(n.charAt(0)=="^") cb.classList.add("black-key")
       if (i % 8 == 7) cb.classList.add("section-end");
       cb.setAttribute("data-note", `${n}`);
       cb.setAttribute("data-time", `${i}`);
