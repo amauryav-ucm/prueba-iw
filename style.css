@@ -7,15 +7,19 @@
 .note {
   appearance: none;
   width: 48px;
-  height: 20px;
-  background-color: #ccc;
   cursor: pointer;
   transition: all 0.2s ease;
   margin-inline:2px;
   margin-block: 0;
 }
 
+.white-key {
+  height: 24px;
+  background-color: #ccc;
+}
+
 .black-key {
+  height: 16px;
   background-color: #aaa;
 }
 
@@ -24,7 +28,7 @@
     margin-inline-end: 8px;
 }
 
-.note:checked {
+.white-key:checked {
   background-color: #808;
   border-color: #808;
 }
